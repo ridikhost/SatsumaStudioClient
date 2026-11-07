@@ -1,0 +1,14 @@
+/home/artur/SatsumaClient/SatsumaStudioClient/bin/Debug/net8.0/SatsumaStudioClient
+/home/artur/SatsumaClient/SatsumaStudioClient/bin/Debug/net8.0/SatsumaStudioClient.deps.json
+/home/artur/SatsumaClient/SatsumaStudioClient/bin/Debug/net8.0/SatsumaStudioClient.runtimeconfig.json
+/home/artur/SatsumaClient/SatsumaStudioClient/bin/Debug/net8.0/SatsumaStudioClient.dll
+/home/artur/SatsumaClient/SatsumaStudioClient/bin/Debug/net8.0/SatsumaStudioClient.pdb
+/home/artur/SatsumaClient/SatsumaStudioClient/obj/Debug/net8.0/SatsumaStudioClient.GeneratedMSBuildEditorConfig.editorconfig
+/home/artur/SatsumaClient/SatsumaStudioClient/obj/Debug/net8.0/SatsumaStudioClient.AssemblyInfoInputs.cache
+/home/artur/SatsumaClient/SatsumaStudioClient/obj/Debug/net8.0/SatsumaStudioClient.AssemblyInfo.cs
+/home/artur/SatsumaClient/SatsumaStudioClient/obj/Debug/net8.0/SatsumaStudioClient.csproj.CoreCompileInputs.cache
+/home/artur/SatsumaClient/SatsumaStudioClient/obj/Debug/net8.0/SatsumaStudioClient.dll
+/home/artur/SatsumaClient/SatsumaStudioClient/obj/Debug/net8.0/refint/SatsumaStudioClient.dll
+/home/artur/SatsumaClient/SatsumaStudioClient/obj/Debug/net8.0/SatsumaStudioClient.pdb
+/home/artur/SatsumaClient/SatsumaStudioClient/obj/Debug/net8.0/SatsumaStudioClient.genruntimeconfig.cache
+/home/artur/SatsumaClient/SatsumaStudioClient/obj/Debug/net8.0/ref/SatsumaStudioClient.dll

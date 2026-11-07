@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "AEOgaZVfD1hIZbdEAuMg9pTZKXuyakoMPZPnm6KaTW9YwHn9U36iy0Rv4XtT0T1O3Eu9J8b/hlPCzphWfmKGqA==",
+  "success": true,
+  "projectFilePath": "/home/artur/SatsumaClient/SatsumaStudioClient/SatsumaStudioClient.csproj",
+  "expectedPackageFiles": [
+    "/home/artur/.nuget/packages/microsoft.netcore.app.runtime.win-x64/8.0.33/microsoft.netcore.app.runtime.win-x64.8.0.33.nupkg.sha512",
+    "/home/artur/.nuget/packages/microsoft.aspnetcore.app.runtime.win-x64/8.0.33/microsoft.aspnetcore.app.runtime.win-x64.8.0.33.nupkg.sha512",
+    "/home/artur/.nuget/packages/microsoft.netcore.app.host.win-x64/8.0.33/microsoft.netcore.app.host.win-x64.8.0.33.nupkg.sha512"
+  ],
+  "logs": []
+}
