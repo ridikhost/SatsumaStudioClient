@@ -20,17 +20,24 @@ namespace SatsumaStudioClient
         [STAThread]
         static void Main()
         {
-            Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
+            try
+            {
+                Application.EnableVisualStyles();
+                Application.SetCompatibleTextRenderingDefault(false);
 
-            string token = LoadToken();
-            if (string.IsNullOrEmpty(token))
-            {
-                Application.Run(new LoginForm());
+                string token = LoadToken();
+                if (string.IsNullOrEmpty(token))
+                {
+                    Application.Run(new LoginForm());
+                }
+                else
+                {
+                    Application.Run(new DashboardForm(token));
+                }
             }
-            else
+            catch (Exception ex)
             {
-                Application.Run(new DashboardForm(token));
+                MessageBox.Show("Krytyczny błąd startowy:\n" + ex.Message, "SatsumaStudio - Awaria", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -95,7 +102,6 @@ namespace SatsumaStudioClient
                 {
                     using var doc = JsonDocument.Parse(resString);
                     string token = doc.RootElement.GetProperty("token").GetString();
-                    bool mustChange = doc.RootElement.GetProperty("must_change_password").GetBoolean();
 
                     Program.SaveToken(token);
                     MessageBox.Show("Zalogowano pomyślnie!", "Sukces", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -202,7 +208,6 @@ namespace SatsumaStudioClient
         private void BtnUpload_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Wybierz plik audio (.wav / .mp3) do przesłania.", "Upload", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            // Tutaj okno dialogowe wyboru pliku i wysyłka do API
         }
     }
 }
