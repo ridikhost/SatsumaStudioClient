@@ -1,0 +1,27 @@
+name: Build Windows App
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+    - name: Pobierz kod źródłowy
+      uses: actions/checkout@v4
+
+    - name: Instalacja środowiska .NET 8
+      uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: '8.0.x'
+
+    - name: Publikacja aplikacji (.exe)
+      run: dotnet publish SatsumaStudioClient.csproj -c Release -r win-x64 --self-contained true -o ./publish-output
+
+    - name: Zapisz skompilowany plik jako artefakt
+      uses: actions/upload-artifact@v4
+      with:
+        name: SatsumaStudioClient-Windows
+        path: ./publish-output/SatsumaStudioClient.exe
